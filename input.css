@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --color-catYellow: #fec40f;
+}
