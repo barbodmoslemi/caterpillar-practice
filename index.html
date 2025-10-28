@@ -6,5 +6,55 @@
     <title>CaterPillar</title>
     <link href="/output.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-black h-24 flex relative">
+      <!-- logo -->
+      <img src="images/logo white.png" alt="" class="mx-auto md:mx-5" />
+      <!-- menu -->
+      <ul
+        class="text-white uppercase hidden md:flex space-x-8 mt-9 text-lg absolute right-52"
+      >
+        <li class="hover:text-catYellow cursor-pointer transition duration-150">
+          Watchs
+        </li>
+        <li class="hover:text-catYellow cursor-pointer transition duration-150">
+          Work Boots
+        </li>
+        <li class="hover:text-catYellow cursor-pointer transition duration-150">
+          Bags
+        </li>
+      </ul>
+      <!--login button  -->
+      <button
+        class="bg-catYellow rounded-lg h-12 md:h-10 w-12 md:w-16 text-black font-bold mt-6 md:mt-8 absolute right-10 hover:bg-black hover:border-2 hover:border-catYellow hover:text-catYellow transition duration-150 group"
+      >
+        <!-- login text -->
+        <span class="hidden md:block">LogIn</span>
+        <!-- login logo -->
+        <svg
+          class="flex md:hidden w-9 mx-auto group-hover:text-catYellow"
+          fill="currentColor"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>ionicons-v5-o</title>
+            <path
+              d="M392,80H232a56.06,56.06,0,0,0-56,56V240H329.37l-52.68-52.69a16,16,0,0,1,22.62-22.62l80,80a16,16,0,0,1,0,22.62l-80,80a16,16,0,0,1-22.62-22.62L329.37,272H176V376c0,32.05,33.79,56,64,56H392a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,392,80Z"
+            ></path>
+            <path d="M80,240a16,16,0,0,0,0,32h96V240Z"></path>
+          </g>
+        </svg>
+      </button>
+
+      <!-- ADD MOBILE MENU AND HAMBURGER LOGO LATER -->
+    </nav>
+  </body>
 </html>
