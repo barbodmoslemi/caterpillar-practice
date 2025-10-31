@@ -46,3 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Start the automatic slide show
   startAutoSlide();
 });
+
+// best sellers
+// best sellers slideshow
+const carousel = document.getElementById("carousel");
+const slides = carousel.children;
+const slideWidth = slides[0].offsetWidth + 32; // card width + gap
+const totalSlides = slides.length;
+let currentIndex = 0;
+
+setInterval(() => {
+  currentIndex++;
+
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  carousel.scrollTo({
+    left: currentIndex * slideWidth,
+    behavior: "smooth",
+  });
+}, 3000); // 3 seconds per slide
