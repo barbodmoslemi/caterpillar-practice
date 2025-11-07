@@ -13,3 +13,16 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.cards:hover .card:not(:hover) {
+  filter: grayscale(100%) brightness(0.6);
+  transform: scale(0.98);
+}
+
+.card:hover {
+  filter: none;
+  transform: scale(1.03);
+}
+
+.card {
+  transition: transform 300ms ease, filter 300ms ease;
+}
